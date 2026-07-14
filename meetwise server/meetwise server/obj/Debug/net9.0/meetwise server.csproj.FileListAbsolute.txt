@@ -1,0 +1,37 @@
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\appsettings.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.staticwebassets.endpoints.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.exe
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.deps.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.runtimeconfig.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\meetwise server.pdb
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.csproj.AssemblyReference.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.AssemblyInfoInputs.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.AssemblyInfo.cs
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.csproj.CoreCompileInputs.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\scopedcss\bundle\meetwise server.styles.css
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\swae.build.ex.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise.5B268C99.Up2Date
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\refint\meetwise server.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.pdb
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\meetwise server.genruntimeconfig.cache
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\obj\Debug\net9.0\ref\meetwise server.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LAPMART\Desktop\MeetWise\meetwise server\meetwise server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,0 +1,507 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\dtos\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\helpers\\rolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\helpers\\rolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\meetwise server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\meetwise server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\interfaces\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\interfaces\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\controllers\\meetingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\controllers\\meetingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\controllers\\teammemberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\controllers\\teammemberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|c:\\users\\lapmart\\desktop\\meetwise\\meetwise server\\meetwise server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC561D12-53F5-40C4-B96A-7500865FB520}|meetwise server\\meetwise server.csproj|solutionrelative:meetwise server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "meetwise server\\DTOs\\Auth\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "meetwise server\\DTOs\\Auth\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:50:09.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "meetwise server\\DTOs\\Auth\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\DTOs\\Auth\\RegisterDto.cs",
+              "RelativeToolTip": "meetwise server\\DTOs\\Auth\\RegisterDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:48:59.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleHelper.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Helpers\\RoleHelper.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Helpers\\RoleHelper.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Helpers\\RoleHelper.cs",
+              "RelativeToolTip": "meetwise server\\Helpers\\RoleHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:48:00.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Identity\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\Identity\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Identity\\ApplicationUser.cs",
+              "RelativeToolTip": "meetwise server\\Models\\Identity\\ApplicationUser.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:45:30.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "meetwise server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "meetwise server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-14T19:04:59.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Program.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Program.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Program.cs",
+              "RelativeToolTip": "meetwise server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:04:23.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\Interfaces\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\Interfaces\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:50:29.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITeamService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\ITeamService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\Interfaces\\ITeamService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\ITeamService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\Interfaces\\ITeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:49:56.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:49:33.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:49:13.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Meeting.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Meeting.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\Meeting.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Meeting.cs",
+              "RelativeToolTip": "meetwise server\\Models\\Meeting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:38:52.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TeamMember.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\TeamMember.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\TeamMember.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\TeamMember.cs",
+              "RelativeToolTip": "meetwise server\\Models\\TeamMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:38:40.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Team.cs",
+              "RelativeToolTip": "meetwise server\\Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:38:28.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\Role.cs",
+              "RelativeToolTip": "meetwise server\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:38:19.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Models\\User.cs",
+              "RelativeToolTip": "meetwise server\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:38:05.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "meetwise server\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:36:34.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "meetwise server",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\meetwise server.csproj",
+              "RelativeDocumentMoniker": "meetwise server\\meetwise server.csproj",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\meetwise server.csproj",
+              "RelativeToolTip": "meetwise server\\meetwise server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-14T18:30:59.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "meetwise server\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:36:20.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MeetingsController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\MeetingsController.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Controllers\\MeetingsController.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\MeetingsController.cs",
+              "RelativeToolTip": "meetwise server\\Controllers\\MeetingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:35:41.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\JwtService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:02:08.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\TeamService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\TeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:01:43.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\UserService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:01:29.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Services\\AuthService.cs",
+              "RelativeToolTip": "meetwise server\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:01:14.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TeamMembersController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\TeamMembersController.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Controllers\\TeamMembersController.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\TeamMembersController.cs",
+              "RelativeToolTip": "meetwise server\\Controllers\\TeamMembersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T18:00:22.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TeamsController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\TeamsController.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Controllers\\TeamsController.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\TeamsController.cs",
+              "RelativeToolTip": "meetwise server\\Controllers\\TeamsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T17:59:48.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "meetwise server\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T17:59:29.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "meetwise server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "meetwise server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T17:59:05.851Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
