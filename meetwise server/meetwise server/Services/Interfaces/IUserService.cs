@@ -1,6 +1,7 @@
-﻿namespace meetwise_server.Services.Interfaces
+﻿using meetwise_server.DTOs.User;
+using System.Security.Claims;
+
+public interface IUserService
 {
-    public interface IUserService
-    {
-    }
+    Task<UserProfileDto?> GetCurrentUserAsync(ClaimsPrincipal principal);
 }
