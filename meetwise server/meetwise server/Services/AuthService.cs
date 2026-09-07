@@ -107,4 +107,64 @@ public class AuthService : IAuthService
             Roles = await _userManager.GetRolesAsync(user)
         };
     }
+
+    public async Task<RefreshTokenResponseDto> RefreshTokenAsync(
+    string refreshToken)
+    {
+        var storedToken =
+            await _refreshTokenService.ValidateRefreshTokenAsync(
+                refreshToken);
+
+        if (storedToken == null)
+        {
+            throw new UnauthorizedAccessException(
+                "Invalid or expired refresh token.");
+        }
+
+        var user = storedToken.User;
+
+        if (!user.IsActive)
+        {
+            throw new UnauthorizedAccessException(
+                "User account is inactive.");
+        }
+
+        // Generate new access token
+        var jwt =
+            await _jwtService.GenerateTokenAsync(user.Id);
+
+        // Generate new refresh token
+        var newRefreshToken =
+            await _refreshTokenService.GenerateRefreshTokenAsync(
+                user.Id);
+
+        // Hash new token so we can store the relationship
+        var newRefreshTokenHash =
+            CryptoHelper.ComputeSha256(newRefreshToken);
+
+        // Revoke old refresh token
+        await _refreshTokenService.RevokeRefreshTokenAsync(
+            refreshToken,
+            newRefreshTokenHash);
+
+        return new RefreshTokenResponseDto
+        {
+            Token = jwt.Token,
+            RefreshToken = newRefreshToken,
+            Expiration = jwt.Expiration
+        };
+    }
+
+    public async Task LogoutAsync(string refreshToken)
+    {
+        var revoked =
+            await _refreshTokenService.RevokeRefreshTokenAsync(
+                refreshToken);
+
+        if (!revoked)
+        {
+            throw new UnauthorizedAccessException(
+                "Invalid or already revoked refresh token.");
+        }
+    }
 }

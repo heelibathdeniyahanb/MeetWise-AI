@@ -9691,11 +9691,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\meetwise server.csproj",
+      "projectUniqueName": "C:\\Users\\LAPMART\\Desktop\\MeetWise-AI\\meetwise server\\meetwise server\\meetwise server.csproj",
       "projectName": "meetwise server",
-      "projectPath": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\meetwise server.csproj",
+      "projectPath": "C:\\Users\\LAPMART\\Desktop\\MeetWise-AI\\meetwise server\\meetwise server\\meetwise server.csproj",
       "packagesPath": "C:\\Users\\LAPMART\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAPMART\\Desktop\\MeetWise\\meetwise server\\meetwise server\\obj\\",
+      "outputPath": "C:\\Users\\LAPMART\\Desktop\\MeetWise-AI\\meetwise server\\meetwise server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
