@@ -8,5 +8,7 @@ public interface IRefreshTokenService
 
     Task<RefreshToken?> ValidateRefreshTokenAsync(string refreshToken);
 
-    Task<bool> RevokeRefreshTokenAsync(string refreshToken);
+    Task<bool> RevokeRefreshTokenAsync(
+         string refreshToken,
+         string? replacedByTokenHash = null);
 }

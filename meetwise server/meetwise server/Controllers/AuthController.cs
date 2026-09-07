@@ -56,4 +56,30 @@ public class AuthController : ControllerBase
         "User profile retrieved successfully."
     ));
     }
+
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> RefreshToken(
+    RefreshTokenDto dto)
+    {
+        var result =
+            await _authService.RefreshTokenAsync(
+                dto.RefreshToken);
+
+        return Ok(
+            ApiResponseHelper.Success(
+                result,
+                "Token refreshed successfully."));
+    }
+
+    [HttpPost("logout")]
+    public async Task<IActionResult> Logout(
+    RefreshTokenDto dto)
+    {
+        await _authService.LogoutAsync(dto.RefreshToken);
+
+        return Ok(
+            ApiResponseHelper.Success(
+                new { },
+                "Logout successful."));
+    }
 }

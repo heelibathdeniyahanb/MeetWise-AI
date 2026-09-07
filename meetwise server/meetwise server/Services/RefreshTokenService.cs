@@ -42,10 +42,10 @@ public class RefreshTokenService : IRefreshTokenService
         var hashed = CryptoHelper.ComputeSha256(refreshToken);
 
         var token = await _context.RefreshTokens
-            .Include(x => x.User)
-            .FirstOrDefaultAsync(x =>
-                x.TokenHash == hashed &&
-                !x.IsRevoked);
+        .Include(x => x.User)
+        .FirstOrDefaultAsync(x =>
+            x.TokenHash == hashed &&
+            x.RevokedAt == null);
 
         if (token == null)
             return null;
@@ -56,21 +56,31 @@ public class RefreshTokenService : IRefreshTokenService
         return token;
     }
 
-    public async Task<bool> RevokeRefreshTokenAsync(string refreshToken)
+    public async Task<bool> RevokeRefreshTokenAsync(
+        string refreshToken,
+        string? replacedByTokenHash = null)
     {
-        var hashed = CryptoHelper.ComputeSha256(refreshToken);
+        if (string.IsNullOrWhiteSpace(refreshToken))
+            return false;
+
+        var hashedToken =
+            CryptoHelper.ComputeSha256(refreshToken);
 
         var token = await _context.RefreshTokens
             .FirstOrDefaultAsync(x =>
-                x.TokenHash == hashed);
+                x.TokenHash == hashedToken);
 
         if (token == null)
             return false;
 
+        if (token.RevokedAt != null)
+            return false;
+
         token.RevokedAt = DateTime.UtcNow;
+        token.ReplacedByTokenHash = replacedByTokenHash;
 
         await _context.SaveChangesAsync();
 
         return true;
-    }
+    }  
 }
