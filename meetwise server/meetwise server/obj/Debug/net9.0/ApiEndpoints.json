@@ -114,5 +114,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "meetwise_server.Controllers.MeetingsController",
+    "Method": "UploadRecording",
+    "RelativePath": "api/Meetings/{id}/recording",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

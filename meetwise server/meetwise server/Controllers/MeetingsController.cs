@@ -148,4 +148,106 @@ public class MeetingsController : ControllerBase
                 Data = response
             });
     }
+
+    [HttpPost("{id:guid}/recording")]
+    [Consumes("multipart/form-data")]
+    [RequestSizeLimit(500_000_000)] // 500 MB
+    public async Task<IActionResult> UploadRecording(
+    Guid id,
+    IFormFile file)
+    {
+        var userId = _userManager.GetUserId(User);
+
+        if (string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        if (file == null || file.Length == 0)
+        {
+            return BadRequest(new ApiResponse<object>
+            {
+                Success = false,
+                Message = "Please select a recording file."
+            });
+        }
+
+        var meeting = await _context.Meetings
+            .FirstOrDefaultAsync(x =>
+                x.Id == id &&
+                x.CreatedById == userId);
+
+        if (meeting == null)
+        {
+            return NotFound(new ApiResponse<object>
+            {
+                Success = false,
+                Message = "Meeting not found."
+            });
+        }
+
+        var allowedExtensions = new[]
+        {
+        ".mp3",
+        ".wav",
+        ".m4a",
+        ".mp4",
+        ".webm",
+        ".mkv"
+    };
+
+        var extension = Path.GetExtension(file.FileName)
+            .ToLowerInvariant();
+
+        if (!allowedExtensions.Contains(extension))
+        {
+            return BadRequest(new ApiResponse<object>
+            {
+                Success = false,
+                Message = "Unsupported recording format."
+            });
+        }
+
+        var uploadsFolder = Path.Combine(
+            Directory.GetCurrentDirectory(),
+            "uploads",
+            "meetings");
+
+        Directory.CreateDirectory(uploadsFolder);
+
+        var storedFileName =
+            $"{Guid.NewGuid()}{extension}";
+
+        var filePath = Path.Combine(
+            uploadsFolder,
+            storedFileName);
+
+        await using (var stream = new FileStream(
+            filePath,
+            FileMode.Create))
+        {
+            await file.CopyToAsync(stream);
+        }
+
+        meeting.RecordingFileName = file.FileName;
+        meeting.RecordingFilePath =
+            Path.Combine("uploads", "meetings", storedFileName);
+
+        meeting.Status = "Processing";
+        meeting.UpdatedAt = DateTime.UtcNow;
+
+        await _context.SaveChangesAsync();
+
+        return Ok(new ApiResponse<object>
+        {
+            Success = true,
+            Message = "Recording uploaded successfully.",
+            Data = new
+            {
+                meeting.Id,
+                meeting.RecordingFileName,
+                meeting.Status
+            }
+        });
+    }
 }
