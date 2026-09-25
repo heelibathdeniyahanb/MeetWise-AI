@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import meetingService from "../../services/meetingService";
 import {
   ArrowLeft,
   CalendarDays,
@@ -23,6 +24,8 @@ const CreateMeeting = () => {
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [dragging, setDragging] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,29 +39,22 @@ const CreateMeeting = () => {
   const handleFile = (file) => {
     if (!file) return;
 
-   const handleFile = (file) => {
-  if (!file) return;
+    const allowedExtensions = [
+      ".mp3",
+      ".wav",
+      ".m4a",
+      ".webm",
+      ".mp4",
+      ".mkv",
+    ];
+    const extension = file.name
+      .substring(file.name.lastIndexOf("."))
+      .toLowerCase();
 
-  const allowedExtensions = [
-    ".mp3",
-    ".wav",
-    ".m4a",
-    ".webm",
-    ".mp4",
-    ".mkv",
-  ];
-
-  const extension = file.name
-    .substring(file.name.lastIndexOf("."))
-    .toLowerCase();
-
-  if (!allowedExtensions.includes(extension)) {
-    alert("Please upload a supported audio or video file.");
-    return;
-  }
-
-  setSelectedFile(file);
-};
+    if (!allowedExtensions.includes(extension)) {
+      alert("Please upload a supported audio or video file.");
+      return;
+    }
 
     setSelectedFile(file);
   };
@@ -87,14 +83,39 @@ const CreateMeeting = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError("");
 
-    console.log("Meeting:", formData);
-    console.log("Recording:", selectedFile);
+    try {
+      const meetingData = {
+        title: formData.title,
+        description: formData.description || null,
+        meetingDate: formData.date,
+        startTime: `${formData.startTime}:00`,
+        durationMinutes: Number(formData.duration),
+      };
 
-    // Backend integration will be added later.
-    alert("Meeting form submitted successfully!");
+      const response = await meetingService.createMeeting(meetingData);
+
+      if (response?.success === false) {
+        throw new Error(response.message || "Failed to create meeting.");
+      }
+
+      const createdMeeting = response?.data ?? response;
+      const meetingId = createdMeeting?.id ?? createdMeeting?.meetingId;
+      navigate(meetingId ? `/meetings/${meetingId}` : "/meetings");
+    } catch (error) {
+      console.error("Create meeting error:", error);
+      setSubmitError(
+        error.response?.data?.message ||
+          error.message ||
+          "Could not save the meeting. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -340,11 +361,18 @@ const CreateMeeting = () => {
             Cancel
           </button>
 
+          {submitError && (
+            <p role="alert" className="mr-auto self-center text-sm text-red-400">
+              {submitError}
+            </p>
+          )}
+
           <button
             type="submit"
+            disabled={isSubmitting}
             className="rounded-lg bg-indigo-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-indigo-500"
           >
-            Create Meeting
+            {isSubmitting ? "Saving..." : "Create Meeting"}
           </button>
 
         </div>
