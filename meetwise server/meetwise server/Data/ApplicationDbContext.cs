@@ -1,4 +1,5 @@
-﻿using meetwise_server.Models.Auth;
+﻿using meetwise_server.Models;
+using meetwise_server.Models.Auth;
 using meetwise_server.Models.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace meetwise_server.Data
            
         }
         public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+        public DbSet<Meeting> Meetings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
