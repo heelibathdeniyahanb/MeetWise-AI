@@ -39,14 +39,7 @@ const CreateMeeting = () => {
   const handleFile = (file) => {
     if (!file) return;
 
-    const allowedExtensions = [
-      ".mp3",
-      ".wav",
-      ".m4a",
-      ".webm",
-      ".mp4",
-      ".mkv",
-    ];
+    const allowedExtensions = [".mp3", ".wav", ".m4a", ".webm", ".mp4", ".mkv"];
     const extension = file.name
       .substring(file.name.lastIndexOf("."))
       .toLowerCase();
@@ -111,7 +104,7 @@ const CreateMeeting = () => {
       setSubmitError(
         error.response?.data?.message ||
           error.message ||
-          "Could not save the meeting. Please try again."
+          "Could not save the meeting. Please try again.",
       );
     } finally {
       setIsSubmitting(false);
@@ -120,7 +113,6 @@ const CreateMeeting = () => {
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-
       {/* Header */}
       <div className="flex items-center gap-4">
         <button
@@ -132,9 +124,7 @@ const CreateMeeting = () => {
         </button>
 
         <div>
-          <h1 className="text-3xl font-bold">
-            New Meeting
-          </h1>
+          <h1 className="text-3xl font-bold">New Meeting</h1>
 
           <p className="mt-1 text-slate-400">
             Create a meeting and upload its recording for AI analysis.
@@ -143,14 +133,10 @@ const CreateMeeting = () => {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-
         {/* Meeting Details */}
         <div className="rounded-xl border border-slate-800 bg-slate-900 p-6">
-
           <div className="mb-6">
-            <h2 className="text-lg font-semibold">
-              Meeting Details
-            </h2>
+            <h2 className="text-lg font-semibold">Meeting Details</h2>
 
             <p className="mt-1 text-sm text-slate-500">
               Basic information about your meeting.
@@ -158,7 +144,6 @@ const CreateMeeting = () => {
           </div>
 
           <div className="space-y-5">
-
             {/* Title */}
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-300">
@@ -194,7 +179,6 @@ const CreateMeeting = () => {
 
             {/* Date / Time / Duration */}
             <div className="grid gap-5 md:grid-cols-3">
-
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-300">
                   Date
@@ -260,19 +244,14 @@ const CreateMeeting = () => {
                   <option value="120">2 hours</option>
                 </select>
               </div>
-
             </div>
-
           </div>
         </div>
 
         {/* Recording */}
         <div className="rounded-xl border border-slate-800 bg-slate-900 p-6">
-
           <div className="mb-6">
-            <h2 className="text-lg font-semibold">
-              Meeting Recording
-            </h2>
+            <h2 className="text-lg font-semibold">Meeting Recording</h2>
 
             <p className="mt-1 text-sm text-slate-500">
               Upload the recording that MeetWise will transcribe and analyze.
@@ -298,9 +277,7 @@ const CreateMeeting = () => {
                 <Upload size={25} />
               </div>
 
-              <h3 className="mt-4 font-medium">
-                Upload meeting recording
-              </h3>
+              <h3 className="mt-4 font-medium">Upload meeting recording</h3>
 
               <p className="mt-2 text-sm text-slate-500">
                 Drag and drop your file here, or click to browse
@@ -320,7 +297,6 @@ const CreateMeeting = () => {
             </div>
           ) : (
             <div className="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-950 p-4">
-
               <div className="flex min-w-0 items-center gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-indigo-500/10 text-indigo-400">
                   <FileAudio size={21} />
@@ -344,15 +320,12 @@ const CreateMeeting = () => {
               >
                 <X size={18} />
               </button>
-
             </div>
           )}
-
         </div>
 
         {/* Actions */}
         <div className="flex justify-end gap-3">
-
           <button
             type="button"
             onClick={() => navigate("/meetings")}
@@ -362,7 +335,10 @@ const CreateMeeting = () => {
           </button>
 
           {submitError && (
-            <p role="alert" className="mr-auto self-center text-sm text-red-400">
+            <p
+              role="alert"
+              className="mr-auto self-center text-sm text-red-400"
+            >
               {submitError}
             </p>
           )}
@@ -374,9 +350,7 @@ const CreateMeeting = () => {
           >
             {isSubmitting ? "Saving..." : "Create Meeting"}
           </button>
-
         </div>
-
       </form>
     </div>
   );

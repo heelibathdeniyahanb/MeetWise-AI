@@ -13,26 +13,16 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
 
-      <Route element={<ProtectedRoute />}>
-  <Route element={<AppLayout />}>
+        <Route element={<ProtectedRoute />}>
+          <Route element={<AppLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
 
-    <Route
-      path="/dashboard"
-      element={<Dashboard />}
-    />
+            <Route path="/meetings" element={<Meetings />} />
 
-    <Route
-      path="/meetings"
-      element={<Meetings />}
-    />
+            <Route path="/meetings/create" element={<CreateMeeting />} />
 
-      <Route
-      path="/meetings/create"
-      element={<CreateMeeting />}
-    />
-
-     <Route path="/meetings/:id" element={<MeetingDetails />} />
-{/* 
+            <Route path="/meetings/:id" element={<MeetingDetails />} />
+            {/* 
     <Route
       path="/tasks"
       element={<Tasks />}
@@ -42,9 +32,8 @@ function App() {
       path="/teams"
       element={<Teams />}
     /> */}
-
-  </Route>
-</Route>
+          </Route>
+        </Route>
 
         <Route path="*" element={<Login />} />
       </Routes>
