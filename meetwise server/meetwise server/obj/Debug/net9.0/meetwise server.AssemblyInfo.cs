@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("meetwise server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5f44dad036569cb457193539eaf51171ed27e77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1713d389e93d3be92978c5382c02526b2b933e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("meetwise server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("meetwise server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

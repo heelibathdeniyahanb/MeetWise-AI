@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import {
   ArrowLeft,
@@ -22,6 +22,48 @@ const MeetingDetails = () => {
   const [meeting, setMeeting] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const fileInputRef = useRef(null);
+  const [uploading, setUploading] = useState(false);
+
+  const handleRecordingUpload = async (file) => {
+    if (!file) return;
+
+    const allowedExtensions = [".mp3", ".wav", ".m4a", ".mp4", ".webm", ".mkv"];
+
+    const extension = file.name
+      .substring(file.name.lastIndexOf("."))
+      .toLowerCase();
+
+    if (!allowedExtensions.includes(extension)) {
+      alert("Please upload a supported audio or video file.");
+      return;
+    }
+
+    try {
+      setUploading(true);
+
+      const response = await meetingService.uploadRecording(id, file);
+
+      if (response.success) {
+        alert("Recording uploaded successfully.");
+
+        // Reload meeting information
+        const updatedMeeting = await meetingService.getMeeting(id);
+
+        if (updatedMeeting.success) {
+          setMeeting(updatedMeeting.data);
+        }
+      } else {
+        alert(response.message || "Failed to upload recording.");
+      }
+    } catch (error) {
+      console.error("Recording upload failed:", error);
+
+      alert(error.response?.data?.message || "Failed to upload recording.");
+    } finally {
+      setUploading(false);
+    }
+  };
 
   useEffect(() => {
     const loadMeeting = async () => {
@@ -40,8 +82,7 @@ const MeetingDetails = () => {
         console.error("Failed to load meeting:", err);
 
         setError(
-          err.response?.data?.message ||
-            "Unable to load meeting details."
+          err.response?.data?.message || "Unable to load meeting details.",
         );
       } finally {
         setLoading(false);
@@ -129,9 +170,7 @@ const MeetingDetails = () => {
               </span>
             </div>
 
-            <h1 className="text-3xl font-bold text-white">
-              {meeting.title}
-            </h1>
+            <h1 className="text-3xl font-bold text-white">{meeting.title}</h1>
 
             {meeting.description && (
               <p className="mt-3 max-w-3xl text-slate-400">
@@ -145,10 +184,7 @@ const MeetingDetails = () => {
         <div className="mt-6 grid grid-cols-1 gap-4 border-t border-slate-800 pt-6 sm:grid-cols-3">
           <div className="flex items-center gap-3">
             <div className="rounded-lg bg-slate-800 p-2">
-              <CalendarDays
-                size={18}
-                className="text-blue-400"
-              />
+              <CalendarDays size={18} className="text-blue-400" />
             </div>
 
             <div>
@@ -162,36 +198,26 @@ const MeetingDetails = () => {
 
           <div className="flex items-center gap-3">
             <div className="rounded-lg bg-slate-800 p-2">
-              <Clock3
-                size={18}
-                className="text-purple-400"
-              />
+              <Clock3 size={18} className="text-purple-400" />
             </div>
 
             <div>
-              <p className="text-xs text-slate-500">
-                Time & Duration
-              </p>
+              <p className="text-xs text-slate-500">Time & Duration</p>
 
               <p className="text-sm text-slate-200">
-                {formatTime(meeting.startTime)} ·{" "}
-                {meeting.durationMinutes} minutes
+                {formatTime(meeting.startTime)} · {meeting.durationMinutes}{" "}
+                minutes
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="rounded-lg bg-slate-800 p-2">
-              <Users
-                size={18}
-                className="text-emerald-400"
-              />
+              <Users size={18} className="text-emerald-400" />
             </div>
 
             <div>
-              <p className="text-xs text-slate-500">
-                Participants
-              </p>
+              <p className="text-xs text-slate-500">Participants</p>
 
               <p className="text-sm text-slate-200">
                 Participants will be added later
@@ -205,16 +231,12 @@ const MeetingDetails = () => {
       <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <div className="mb-5">
           <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
-            <FileAudio
-              size={20}
-              className="text-blue-400"
-            />
+            <FileAudio size={20} className="text-blue-400" />
             Meeting Recording
           </h2>
 
           <p className="mt-1 text-sm text-slate-500">
-            Upload a recording to generate a transcript and AI
-            insights.
+            Upload a recording to generate a transcript and AI insights.
           </p>
         </div>
 
@@ -225,9 +247,7 @@ const MeetingDetails = () => {
                 {meeting.recordingFileName}
               </p>
 
-              <p className="mt-1 text-sm text-slate-500">
-                Recording uploaded
-              </p>
+              <p className="mt-1 text-sm text-slate-500">Recording uploaded</p>
             </div>
 
             <button className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500">
@@ -237,17 +257,26 @@ const MeetingDetails = () => {
           </div>
         ) : (
           <div className="rounded-xl border border-dashed border-slate-700 bg-slate-950 p-8 text-center">
-            <FileAudio
-              size={36}
-              className="mx-auto text-slate-600"
-            />
+            <FileAudio size={36} className="mx-auto text-slate-600" />
 
             <p className="mt-3 text-sm text-slate-400">
               No recording uploaded yet.
             </p>
 
-            <button className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500">
-              Upload Recording
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".mp3,.wav,.m4a,.mp4,.webm,.mkv"
+              className="hidden"
+              onChange={(e) => handleRecordingUpload(e.target.files[0])}
+            />
+
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              disabled={uploading}
+              className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {uploading ? "Uploading..." : "Upload Recording"}
             </button>
           </div>
         )}
@@ -256,28 +285,21 @@ const MeetingDetails = () => {
       {/* AI Analysis */}
       <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
-          <Sparkles
-            size={20}
-            className="text-purple-400"
-          />
+          <Sparkles size={20} className="text-purple-400" />
           AI Meeting Analysis
         </h2>
 
         <div className="mt-5 rounded-xl border border-slate-800 bg-slate-950 p-6 text-center">
-          <Sparkles
-            size={36}
-            className="mx-auto text-slate-600"
-          />
+          <Sparkles size={36} className="mx-auto text-slate-600" />
 
           <h3 className="mt-4 font-medium text-slate-300">
             AI analysis is not available yet
           </h3>
 
           <p className="mx-auto mt-2 max-w-lg text-sm text-slate-500">
-            Upload a meeting recording first. Once transcription
-            and AI analysis are implemented, the summary,
-            decisions, action items, risks, and questions will
-            appear here.
+            Upload a meeting recording first. Once transcription and AI analysis
+            are implemented, the summary, decisions, action items, risks, and
+            questions will appear here.
           </p>
         </div>
       </section>
@@ -286,25 +308,18 @@ const MeetingDetails = () => {
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
           <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
-            <CheckCircle2
-              size={20}
-              className="text-emerald-400"
-            />
+            <CheckCircle2 size={20} className="text-emerald-400" />
             Key Decisions
           </h2>
 
           <p className="mt-4 text-sm text-slate-500">
-            AI-generated decisions will appear here after
-            analysis.
+            AI-generated decisions will appear here after analysis.
           </p>
         </section>
 
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
           <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
-            <AlertTriangle
-              size={20}
-              className="text-yellow-400"
-            />
+            <AlertTriangle size={20} className="text-yellow-400" />
             Risks & Blockers
           </h2>
 
@@ -315,16 +330,12 @@ const MeetingDetails = () => {
 
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6 lg:col-span-2">
           <h2 className="flex items-center gap-2 text-lg font-semibold text-white">
-            <HelpCircle
-              size={20}
-              className="text-purple-400"
-            />
+            <HelpCircle size={20} className="text-purple-400" />
             Open Questions
           </h2>
 
           <p className="mt-4 text-sm text-slate-500">
-            Open questions extracted from the meeting will
-            appear here.
+            Open questions extracted from the meeting will appear here.
           </p>
         </section>
       </div>
