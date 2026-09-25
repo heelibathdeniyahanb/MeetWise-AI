@@ -28,7 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Meeting\" />
     <Folder Include="DTOs\Team\" />
     <Folder Include="Models\Team\" />
     <Folder Include="Repositories\" />

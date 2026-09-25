@@ -72,5 +72,47 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "meetwise_server.Controllers.MeetingsController",
+    "Method": "GetMeetings",
+    "RelativePath": "api/Meetings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "meetwise_server.Controllers.MeetingsController",
+    "Method": "CreateMeeting",
+    "RelativePath": "api/Meetings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "meetwise_server.DTOs.Meeting.CreateMeetingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "meetwise_server.Controllers.MeetingsController",
+    "Method": "GetMeeting",
+    "RelativePath": "api/Meetings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
